@@ -2,6 +2,9 @@ package d_prototype;
 
 import java.io.*;
 
+/**
+ * 原型模式通用写法
+ */
 public class client {
 
     interface IProtoType<T> extends Cloneable {
@@ -50,7 +53,7 @@ public class client {
         }
     }
 }
-
+//序列化深拷贝对象
 class Client {
     static class ConcreteProtoType implements Cloneable, Serializable {
         private String desc;
